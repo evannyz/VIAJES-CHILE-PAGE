@@ -1,0 +1,13 @@
+
+/* Se añaden colores en variables para el proyecto */
+:root{
+    --main-bg-light-t:#FFFFFFB3;
+    --main-bg-white: white;
+    
+}
+
+/* Se redimensiona imagen svg como icono de navbar */
+#svg{
+    width: 1.875rem;
+    height: 3.125rem;
+}
