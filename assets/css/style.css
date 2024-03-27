@@ -11,3 +11,9 @@
     width: 1.875rem;
     height: 3.125rem;
 }
+
+/* Se agrega color blanco semi transparente a los elementos del navbar y se agranda la letra */
+.nav-item a{
+    color: var(--main-bg-light-t);
+    font-size: large;
+}

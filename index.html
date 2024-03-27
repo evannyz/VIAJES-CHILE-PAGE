@@ -21,7 +21,8 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <!-- Se agrega icono de navbar y el icono y se cambia a blanco el color de texto que acompaña al icono -->
-            <a class="navbar-brand text-white" href="#"><img id="svg" class="img-fluid" src="assets/img/viajes.svg" alt="icono navbar">Viajes Chile</a>
+            <a class="navbar-brand text-white" href="#"><img id="svg" class="img-fluid" src="assets/img/viajes.svg"
+                    alt="icono navbar">Viajes Chile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,6 +48,37 @@
         </div>
     </nav>
     <!-- Fin Menú de navegación -->
+
+    <!--  Header contenedor de carrusel, se define como contenedor fluido y se le quita padding para abarcar totalidad del ancho y se le agrega id para smooth-->
+    <header class="container-fluid p-0" id="start">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <!-- Se agregn imagenes caracteristicas de la pagina al carrusel -->
+                <div class="carousel-item active">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="imagen animal Llama/ Alpaca">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="imagen estatuas Moái">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="imagen animal Pingüino">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!-- Fin Header -->
+
+
 
 
 
