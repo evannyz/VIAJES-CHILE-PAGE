@@ -3,6 +3,13 @@
 :root{
     --main-bg-light-t:#FFFFFFB3;
     --main-bg-white: white;
+    --main-bg-sky-blue: #0CCAEF;
+    --main-bg-black-b: #212529;
+    --main-bg-grey: #707070;
+    --main-bg-lght: #F8F9FA;
+    --main-bg-white-b: #fff;
+    --main-bg-black: #000000;
+
     
 }
 
@@ -17,3 +24,15 @@
     color: var(--main-bg-light-t);
     font-size: large;
 }
+
+/* Boton hamburguesa modifica color boton hamburguesa  */
+.navbar-toggler{
+    border: solid 1px var(--main-bg-white) ;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+/* Fin boton hamburguesa */
+
+
