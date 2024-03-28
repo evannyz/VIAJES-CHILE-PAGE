@@ -99,10 +99,12 @@
             </div>
 
             <!-- Se agregan 3 parrafos con elementos favicons: 1-avion 2-montaña 3-ruta -->
+            <!-- Se añaden elementos POPOVERS a cada contenedor de favicons -->
 
             <div class="row pt-3">
                 <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4">
-                    <div class="container-fluid text-center" id="plane">
+                    <div class="container-fluid text-center" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="top" data-bs-content="Viajes a locaciones lejanas" id="plane">
                         <i class="fa-solid fa-plane"></i>
                     </div>
                     <div class="container-fluid text-start p-0">
@@ -127,13 +129,15 @@
                             sed blandit. Pretium nibh ipsum consequat nisl. Venenatis urna cursus eget nunc scelerisque
                             viverra mauris in aliquam. </p>
                     </div>
-                    <div class="container-fluid text-center" id="mountain">
+                    <div class="container-fluid text-center" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="top" data-bs-content="Aventuras en cada paso" id="mountain">
                         <i class="fa-solid fa-mountain"></i>
                     </div>
 
                 </div>
                 <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4">
-                    <div class="container-fluid text-center" id="route">
+                    <div class="container-fluid text-center" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="top" data-bs-content="Viajes planificados" id="route">
                         <i class="fa-solid fa-route"></i>
                     </div>
                     <div class="container-fluid text-start p-0">
@@ -214,23 +218,32 @@
                 <h4 class="text-white">CONTACTO</h4>
             </div>
 
+            <!-- Se añade elemento TOOLTIP a cada input  -->
+
             <div class="mb-3 pt-3">
                 <label for="exampleFormControlInput1" class="form-label text-white">Nombre</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
+                <input type="email" class="form-control" id="exampleFormControlInput1" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Debe ingresar su nombre">
             </div>
 
             <div class="mb-3">
                 <label for="exampleFormControlInput2" class="form-label text-white">Asunto</label>
-                <input type="email" class="form-control" id="exampleFormControlInput2">
+                <input type="email" class="form-control" id="exampleFormControlInput2" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Debe ingresar un asunto">
             </div>
 
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label text-white">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label text-white" data-bs-toggle="popover"
+                    data-bs-title="Botón Enviar" data-bs-content="Este botón nos permite enviar datos">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Debe ingresar un texto"></textarea>
             </div>
 
-
-            <button class="btn btn-custom btn-sm mb-5" type="button">Enviar</button>
+            <!-- Se añade elemento boton, se personaliza y emvia alerta gracias a jquery -->
+            <button class="btn btn-custom btn-sm mb-5" type="button" id="send">Enviar</button>
         </section>
         <!-- Fin Tercera Seccion  -->
     </main>
