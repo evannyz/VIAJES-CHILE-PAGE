@@ -70,14 +70,22 @@ body {
 
 /* Se ajusta tamaño de cards para evitar problemas de espacio entre ellas en secccion 2 del cuerpo principal */
 @media (min-width: 1200px) and (max-width: 1399px) {
+
+
     .container-cards .card {
         width: 98% !important;
-        height: 92% !important;
-        overflow: hidden;
+        height: 100% !important;
+        overflow:hidden;
     }
     .card-img-top {
             height: 10rem !important;
         }
+    
+    .container-cards p, h5{
+        font-size: 0.9rem !important;
+    }
+
+    
     
 }
 
@@ -86,3 +94,9 @@ body {
     --bs-tooltip-bg: var(--main-bg-sky-blue);
     --bs-tooltip-color: var(--main-bg-white);
 }
+
+
+/* Opcion de cambio de color de borde
+#title-s1-who{
+    border-bottom: solid 1px var(--main-bg-light-t) !important;
+} */
