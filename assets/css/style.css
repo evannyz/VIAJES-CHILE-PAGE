@@ -1,11 +1,11 @@
 /* Se usa la letra Raleway de google fonts como fuente general para el proyecto */
-body{
+body {
     font-family: "Raleway", sans-serif;
 }
 
 /* Se añaden colores en variables para el proyecto */
-:root{
-    --main-bg-light-t:#FFFFFFB3;
+:root {
+    --main-bg-light-t: #FFFFFFB3;
     --main-bg-white: white;
     --main-bg-sky-blue: #0CCAEF;
     --main-bg-black-b: #212529;
@@ -16,42 +16,67 @@ body{
 }
 
 /* Se redimensiona imagen svg como icono de navbar */
-#svg{
+#svg {
     width: 1.875rem;
     height: 3.125rem;
 }
 
 /* Se agrega color blanco semi transparente a los elementos del navbar y se agranda la letra */
-.nav-item a{
+.nav-item a {
     color: var(--main-bg-light-t);
     font-size: large;
 }
 
 /* Boton hamburguesa:  modifica color boton hamburguesa  */
-.navbar-toggler{
-    border: solid 1px var(--main-bg-white) ;
+.navbar-toggler {
+    border: solid 1px var(--main-bg-white);
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     filter: invert(1);
 }
+
 /* Fin boton hamburguesa */
 
 /* Configuracion favicons */
-#plane, #mountain,#route{
+#plane,
+#mountain,
+#route {
     color: var(--main-bg-white);
     background-color: var(--main-bg-sky-blue);
-    font-size:x-large;
+    font-size: x-large;
 }
 
 /* Altura cards seccion 2 destacados */
-.card-img-top{
+.card-img-top {
     height: 12.5rem;
 }
 
 /* Configuracion del boton de la seccion 3 contacto */
-.btn-custom{
+.btn-custom {
     background-color: var(--main-bg-sky-blue);
     color: var(--main-bg-lght);
 }
 
+/* Se reajustan tamaño de los iconos de marca github twitter facebook linkedin */
+.fa-brands {
+    font-size: xx-large;
+}
+
+/* Se agrega color de fondo al footer */
+#pie {
+    background-color: var(--main-bg-sky-blue);
+}
+
+/* Se ajusta tamaño de cards para evitar problemas de espacio entre ellas en secccion 2 del cuerpo principal */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container-cards .card {
+        width: 98% !important;
+        height: 92% !important;
+        overflow: hidden;
+    }
+    .card-img-top {
+            height: 10rem !important;
+        }
+    
+}

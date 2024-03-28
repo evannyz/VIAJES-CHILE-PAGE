@@ -87,7 +87,7 @@
     </header>
     <!-- Fin Header -->
 
-    <!-- Main: Cuerpo principal de la pagina -->
+    <!-- Main: Cuerpo principal de la pagina, se dividirá en 3 secciones -->
     <main class="container-fluid bg-black pt-2" id="macont">
         <!-- Se divide en 3 secciones quienes somos,  -->
 
@@ -97,6 +97,8 @@
             <div class="container-fluid text-center border-bottom pt-4 pb-3 mb-2">
                 <h4 class="text-white">¿QUIÉNES SOMOS?</h4>
             </div>
+
+            <!-- Se agregan 3 parrafos con elementos favicons: 1-avion 2-montaña 3-ruta -->
 
             <div class="row pt-3">
                 <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4">
@@ -151,13 +153,14 @@
 
         <!-- Segunda Seccion: destacados -->
         <section class="container pt-3" id="outstand">
+            <!-- Contenedor de titulo destacado -->
             <div class="container-fluid text-center border-bottom pt-4 pb-3 mb-2">
                 <h4 class="text-white">DESTACADOS</h4>
             </div>
-
-            <div class="row pt-3">
-                <div class="col-3">
-                    <div class="card text-bg-info border-light" style="width: 19rem;">
+            <!-- Se añaden 4 elementos card  -->
+            <div class="row pt-3 mx-auto container-cards">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="card text-bg-info border-light mx-auto" style="width: 19rem;">
                         <img src="assets/img/card1.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
@@ -167,8 +170,8 @@
                     </div>
 
                 </div>
-                <div class="col-3">
-                    <div class="card text-bg-info border-light" style="width: 19rem;">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="card text-bg-info border-light mx-auto" style="width: 19rem;">
                         <img src="assets/img/card2.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
@@ -178,8 +181,8 @@
                     </div>
 
                 </div>
-                <div class="col-3">
-                    <div class="card text-bg-info border-light" style="width: 19rem;">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="card text-bg-info border-light mx-auto" style="width: 19rem;">
                         <img src="assets/img/card3.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
@@ -189,8 +192,8 @@
                     </div>
 
                 </div>
-                <div class="col-3">
-                    <div class="card text-bg-info border-light" style="width: 19rem;">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="card text-bg-info border-light mx-auto" style="width: 19rem;">
                         <img src="assets/img/card4.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
@@ -205,6 +208,7 @@
         <!-- Fin Segunda Seccion -->
 
         <!-- Tercera Seccion Contacto -->
+        <!-- Se añaden elementos tipo form de bootstrap -->
         <section class="container pt-3" id="contact">
             <div class="container-fluid text-center border-bottom pt-4 pb-3 mb-2">
                 <h4 class="text-white">CONTACTO</h4>
@@ -225,38 +229,43 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
             </div>
 
-            
-            <button class="btn btn-custom btn-sm mb-5" type="button">Enviar</button>
 
+            <button class="btn btn-custom btn-sm mb-5" type="button">Enviar</button>
         </section>
         <!-- Fin Tercera Seccion  -->
-
-
-
     </main>
 
     <!-- Fin Main -->
 
+    <!-- Footer: contenedor de marcas tipos font awesome y nombre de pagina  -->
 
+    <footer class="container-fluid pt-4 pb-3" id="pie">
+        <div class="container ps-5 pe-5">
+            <!-- Contenedor tipo row -->
+            <div class="row">
+                <!-- Nombre de web -->
+                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
+                    <h3 class="text-white">VIAJES CHILE</h3>
+                </div>
 
+                <!-- Se agregan 4 favicons y se los une a sus respectivas plataformas -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-3"><a href="https://github.com/" target="_blank"><i
+                                    class="fa-brands fa-square-github d-inline-block text-white"></i></a></div>
+                        <div class="col-3"><a href="https://cl.linkedin.com/" target="_blank"><i
+                                    class="fa-brands fa-linkedin d-inline-block text-white"></i></a></div>
+                        <div class="col-3"><a href="https://twitter.com/?lang=es" target="_blank"><i
+                                    class="fa-brands fa-square-twitter d-inline-block text-white"></i></a></div>
+                        <div class="col-3"><a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i
+                                    class="fa-brands fa-square-facebook d-inline-block text-white"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin footer -->
 
     <!-- Se agrega jquery al proyecto version 3.7.1 -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
