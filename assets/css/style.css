@@ -1,3 +1,7 @@
+/* Se usa la letra Raleway de google fonts como fuente general para el proyecto */
+body{
+    font-family: "Raleway", sans-serif;
+}
 
 /* Se añaden colores en variables para el proyecto */
 :root{
@@ -9,8 +13,6 @@
     --main-bg-lght: #F8F9FA;
     --main-bg-white-b: #fff;
     --main-bg-black: #000000;
-
-    
 }
 
 /* Se redimensiona imagen svg como icono de navbar */
@@ -25,7 +27,7 @@
     font-size: large;
 }
 
-/* Boton hamburguesa modifica color boton hamburguesa  */
+/* Boton hamburguesa:  modifica color boton hamburguesa  */
 .navbar-toggler{
     border: solid 1px var(--main-bg-white) ;
 }
@@ -35,4 +37,21 @@
 }
 /* Fin boton hamburguesa */
 
+/* Configuracion favicons */
+#plane, #mountain,#route{
+    color: var(--main-bg-white);
+    background-color: var(--main-bg-sky-blue);
+    font-size:x-large;
+}
+
+/* Altura cards seccion 2 destacados */
+.card-img-top{
+    height: 12.5rem;
+}
+
+/* Configuracion del boton de la seccion 3 contacto */
+.btn-custom{
+    background-color: var(--main-bg-sky-blue);
+    color: var(--main-bg-lght);
+}
 

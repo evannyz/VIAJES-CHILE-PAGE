@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
-    <!-- Se agrega bootstrap al proyecto -->
+    <!-- Se agrega bootstrap al proyecto version 5.3.3  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
-    <!-- Se agrega font awesome para iconos en el proyecto -->
+    <!-- Se agrega font awesome para iconos en el proyecto version 6.5.1 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Se agrega google fonts Raleway y Cabin en el proyecto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!--  Se realiza unión con el css principal del proyecto-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -31,21 +38,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Cada elemento se unira mediate href para smooth scroll automatico de bootstrap -->
                 <div class=" container-fluid d-flex justify-content-end">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#start">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Quienes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#outstand">Destacados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#start">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#outstand">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -81,18 +88,18 @@
     <!-- Fin Header -->
 
     <!-- Main: Cuerpo principal de la pagina -->
-    <main class="container-fluid bg-black" id="macont">
+    <main class="container-fluid bg-black pt-2" id="macont">
         <!-- Se divide en 3 secciones quienes somos,  -->
 
         <!-- Primera seccion: quienes somos -->
         <!-- Se añade id para smooth scroll -->
-        <section id="about" class="container">
-            <div class="container-fluid text-center">
-                <h1 class="text-white">¿QUIÉNES SOMOS?</h1>
+        <section id="about" class="container d-none d-sm-none d-md-none d-lg-block col-lg-12">
+            <div class="container-fluid text-center border-bottom pt-4 pb-3 mb-2">
+                <h4 class="text-white">¿QUIÉNES SOMOS?</h4>
             </div>
 
-            <div class="row">
-                <div class="col-4">
+            <div class="row pt-3">
+                <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4">
                     <div class="container-fluid text-center" id="plane">
                         <i class="fa-solid fa-plane"></i>
                     </div>
@@ -106,26 +113,126 @@
                             viverra mauris in aliquam. </p>
                     </div>
 
+                </div>
+                <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4">
+
+                    <div class="container-fluid text-start p-0">
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Sit amet aliquam id diam maecenas
+                            ultricies mi eget. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Morbi
+                            tristique senectus et netus et malesuada fames ac. Blandit cursus risus at ultrices. Magna
+                            etiam tempor orci eu. Facilisis mauris sit amet massa vitae. Nibh cras pulvinar mattis nunc
+                            sed blandit. Pretium nibh ipsum consequat nisl. Venenatis urna cursus eget nunc scelerisque
+                            viverra mauris in aliquam. </p>
+                    </div>
+                    <div class="container-fluid text-center" id="mountain">
+                        <i class="fa-solid fa-mountain"></i>
+                    </div>
 
                 </div>
-                <div class="col-4">
-
-                </div>
-                <div class="col-4">
-
+                <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4">
+                    <div class="container-fluid text-center" id="route">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+                    <div class="container-fluid text-start p-0">
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Sit amet aliquam id diam maecenas
+                            ultricies mi eget. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Morbi
+                            tristique senectus et netus et malesuada fames ac. Blandit cursus risus at ultrices. Magna
+                            etiam tempor orci eu. Facilisis mauris sit amet massa vitae. Nibh cras pulvinar mattis nunc
+                            sed blandit. Pretium nibh ipsum consequat nisl. Venenatis urna cursus eget nunc scelerisque
+                            viverra mauris in aliquam. </p>
+                    </div>
                 </div>
             </div>
 
         </section>
         <!-- Fin primera seccion -->
 
+        <!-- Segunda Seccion: destacados -->
+        <section class="container pt-3" id="outstand">
+            <div class="container-fluid text-center border-bottom pt-4 pb-3 mb-2">
+                <h4 class="text-white">DESTACADOS</h4>
+            </div>
 
-        <section id="outstand">
+            <div class="row pt-3">
+                <div class="col-3">
+                    <div class="card text-bg-info border-light" style="width: 19rem;">
+                        <img src="assets/img/card1.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="card text-bg-info border-light" style="width: 19rem;">
+                        <img src="assets/img/card2.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="card text-bg-info border-light" style="width: 19rem;">
+                        <img src="assets/img/card3.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="card text-bg-info border-light" style="width: 19rem;">
+                        <img src="assets/img/card4.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
-        <section id="contact">
+        <!-- Fin Segunda Seccion -->
+
+        <!-- Tercera Seccion Contacto -->
+        <section class="container pt-3" id="contact">
+            <div class="container-fluid text-center border-bottom pt-4 pb-3 mb-2">
+                <h4 class="text-white">CONTACTO</h4>
+            </div>
+
+            <div class="mb-3 pt-3">
+                <label for="exampleFormControlInput1" class="form-label text-white">Nombre</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label text-white">Asunto</label>
+                <input type="email" class="form-control" id="exampleFormControlInput2">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label text-white">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+            </div>
+
+            
+            <button class="btn btn-custom btn-sm mb-5" type="button">Enviar</button>
 
         </section>
+        <!-- Fin Tercera Seccion  -->
+
+
+
     </main>
 
     <!-- Fin Main -->
@@ -151,9 +258,9 @@
 
 
 
-    <!-- Se agrega jquery al proyecto -->
+    <!-- Se agrega jquery al proyecto version 3.7.1 -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- Se agrega js de bootstrap al proyecto -->
+    <!-- Se agrega js de bootstrap al proyecto version 5.3.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Se realiza union con el archivo js principal del proyecto -->
     <script src="assets/js/main.js"></script>
